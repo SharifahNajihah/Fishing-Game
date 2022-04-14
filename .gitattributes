@@ -1,0 +1,4 @@
+Packages/** filter=lfs diff=lfs merge=lfs -text
+ScenicDrive(OverallTourism/** filter=lfs diff=lfs merge=lfs -text
+*.mp4 filter=lfs diff=lfs merge=lfs -text
+*.avi filter=lfs diff=lfs merge=lfs -text
