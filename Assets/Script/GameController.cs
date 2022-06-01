@@ -1,12 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
+using System;
 
 namespace FishingGame.Data
 {
-    public class GameController : MonoBehaviour
-    {
-        [SerializeField] Item[] fishItems;
-    }
+
 }
 
