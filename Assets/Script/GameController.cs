@@ -6,7 +6,7 @@ namespace FishingGame.Data
 {
     public class GameController : MonoBehaviour
     {
-
+        [SerializeField] Item[] fishItems;
     }
 }
 
