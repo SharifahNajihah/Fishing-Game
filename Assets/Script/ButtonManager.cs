@@ -37,19 +37,19 @@ namespace FishHunter.UIManager
         }
 
 
-        void Update()
-        {
-            if (UIManager.Instance.OnEntered(gameObject))
-            {
-                transform.DOScale(Vector3.one * 2, 0.3f);
-                //transform.localScale = Vector3.one * 2;
-            }
-            else
-            {
-                transform.DOScale(Vector3.one, 0.3f);
-                //transform.localScale = Vector3.one;
-            }
-        }
+        //void Update()
+        //{
+        //    if (UIManager.Instance.OnEntered(gameObject))
+        //    {
+        //        transform.DOScale(Vector3.one * 2, 0.3f);
+        //        //transform.localScale = Vector3.one * 2;
+        //    }
+        //    else
+        //    {
+        //        transform.DOScale(Vector3.one, 0.3f);
+        //        //transform.localScale = Vector3.one;
+        //    }
+        //}
 
         void SelectObject()
         {
