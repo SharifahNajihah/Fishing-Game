@@ -2,9 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Item
+[CreateAssetMenu(fileName = "Item1", menuName = "AddItem/Item")]
+public class Item : ScriptableObject
 {
     public string fishName;
-    public int fishPrice;
-    public float fishWeight;
+    public float fishPrice;
+    public GameObject fishPrefab;
+    public Sprite fishImage;
 }
