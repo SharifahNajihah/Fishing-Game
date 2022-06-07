@@ -11,7 +11,7 @@ namespace FishHunter.LevelManager
 
         public void PlayGame()
         {
-            SceneManager.LoadScene("GameScene");
+            SceneManager.LoadScene("Fishing2");
         }
     }
 }
