@@ -6,14 +6,14 @@ namespace FishHunter.Data
 {
     public class RandomPick : Singleton<RandomPick>
     {
-        List<string> myFish1 = new List<string>();
-        List<string> myFish2 = new List<string>();
+        public List<string> myFish1 = new List<string>();
+        public List<string> myFish2 = new List<string>();
 
         string selected1;
         string selected2;
 
         [SerializeField] Item[] fishList;
-        //[SerializeField] Sprite tempFish;
+        [SerializeField] Sprite tempFish;
         public void Fish()
         {
             myFish1.Add("Keli");
@@ -38,7 +38,7 @@ namespace FishHunter.Data
             {
                 selected1 = myFish1[i];
 
-                for (int j = 0; j < 3; j++)
+                for (int j = 0; j < 4; j++)
                 {
                     selected2 = myFish2[j];
                     //yield return new WaitForSeconds(1);
@@ -46,7 +46,6 @@ namespace FishHunter.Data
 
                 if (selected1 == "Keli")
                 {
-                    
                     Debug.Log("Got Keli");
                     break;
                 }
@@ -79,8 +78,7 @@ namespace FishHunter.Data
 
             foreach (Item i in fishList)
             {
-                Item.FindObjectOfType<RandomPick>();
-                Debug.Log("kkk");
+                //tempFish = fishList[]fishImage.name();
             }
 
             yield return null;
@@ -94,8 +92,10 @@ namespace FishHunter.Data
                 string temp = lists[j];
                 lists[j] = lists[rnd];
                 lists[rnd] = temp;
+
                 Debug.Log(temp);
             }
+
         }
     }
 }

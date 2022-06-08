@@ -499,10 +499,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9f3984b280f4c5459abaf8df0f45b14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  myFish1: []
+  myFish2: []
   fishList:
   - {fileID: 11400000, guid: ae16c09439680454ab3ab7564c7c0af6, type: 2}
-  - {fileID: 11400000, guid: ae16c09439680454ab3ab7564c7c0af6, type: 2}
-  - {fileID: 11400000, guid: ae16c09439680454ab3ab7564c7c0af6, type: 2}
+  tempFish: {fileID: 0}
 --- !u!4 &554634185
 Transform:
   m_ObjectHideFlags: 0
