@@ -106,6 +106,8 @@ public class Test : MonoBehaviour
 			Vector3 relativePos = targetPos - points[i].point.position;
 			Quaternion rotation = Quaternion.LookRotation(relativePos);
 			points[i].point.rotation = Quaternion.Euler(rotation.eulerAngles + new Vector3(90,0,0));
+
+			
 		}
 
 		/*for(int j = 0; j<controlPoints.Count; j++)
